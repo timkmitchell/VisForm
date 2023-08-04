@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form App</title> 
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+  </head>
+
+  <body>
+  
+    <header>
+
+      <div class="nav">
+        <h1 class="logo">Visitor Form</h1>
+
+        <strong>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('visform') }}">Form</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-btn" id="menu-btn">
+              <div class="menu-btn__burger"></div>
+            </div>
+        </strong>
+      </div>
+
+    </header> 
+
+    <section class="cont-page">
+
+        <nav>
+
+            <ul>
+                <li><a target="_top" href="{{ url_for('index') }}">Home</a></li>
+                <li><a target="_top" href="{{ url_for('visform') }}">Form</a></li>
+            </ul>
+
+        </nav>
+        
+    </section>
+    
+    <section class="container">
+    <!--This creates an empty block
+        that a child template can fill in.-->
+      {% block content %}
+      {% endblock %}
+    </section>
+
+    <strong><script src="{{url_for('static', filename='/js/style.js')}}"></script></strong>
+    
+  </body>
+
+</html>

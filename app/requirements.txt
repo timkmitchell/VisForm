@@ -1,0 +1,4 @@
+Flask==2.3.2
+Flask_Mail==0.9.1
+Flask_WTF==1.1.1
+WTForms==3.0.1
