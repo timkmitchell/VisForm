@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 #CSRF prevention-checks for matching token
 #If it matches the handling and validation continues
-app.secret_key = '$3@$ging5gj%24'
+app.secret_key = '*******'
 
 mail = Mail()
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
