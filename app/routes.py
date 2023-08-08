@@ -15,7 +15,7 @@ app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = 'tmitchell822@gmail.com'
-app.config["MAIL_PASSWORD"] = 'jvndpiuweapjjufo'
+app.config["MAIL_PASSWORD"] = '********'
 mail.init_app(app)
 
 #maps URL'/' to the "home" function
